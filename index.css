@@ -1,0 +1,283 @@
+body {
+    background: linear-gradient(150deg, #fdc0e9, #cf86fc);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.Cabecalho .logo {
+    margin: 0;
+}
+
+.imagem-logo {
+    width: 150px;
+    height: auto;
+}
+
+.Cabecalho nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.Cabecalho nav ul li {
+    margin-left: 0px;
+}
+
+.Cabecalho nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    padding: 22px 20px;
+    transition: background-color 0.3s, color 0.3s; 
+    white-space: nowrap; 
+}
+
+.Cabecalho nav ul li a:hover {
+    background: linear-gradient(150deg, #fd3cbd70, #b554f1); 
+    color: #fff; 
+    border-radius: 5px; 
+}
+
+.Texto-sobre-nos h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    margin-top: 200px;
+    font-size: 40px;
+}
+
+.Box-do-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Box-do-texto p {
+    width: 60%;
+    text-align: center;
+    margin: 30px 0px 230px 0px;
+}
+
+.serviços {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.container-servicos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px 130px 20px;
+}
+
+.profissionais {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profissionais:hover {
+    background-color: #e0e0e09f; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.profissionais img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profissionais h3 {
+    margin: 10px 0;
+}
+
+.Entre-em-contato p {
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #83b8fd; 
+    color: white;
+    padding: 70px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 25px;
+}
+
+footer ul li a:hover {
+    color: #ddd; 
+}
+
+footer address {
+    margin: 0;
+}
+
+footer .mapa iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .Cabecalho nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Cabecalho nav ul li a {
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .Texto-sobre-nos h1 {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    .Box-do-texto p {
+        width: 80%;
+        margin: 20px 0px 150px 0px;
+    }
+
+    .serviços {
+        font-size: 30px;
+    }
+
+    .container-servicos {
+        padding: 10px;
+    }
+
+    .profissionais {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+    
+    footer .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    footer ul {
+        margin-top: 20px;
+    }
+
+    footer ul li a {
+        font-size: 18px;
+    }
+
+    footer address {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .Cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagem-logo {
+        width: 100px;
+    }
+
+    .Cabecalho nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .Cabecalho nav ul li a {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    .Texto-sobre-nos h1 {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    .Box-do-texto p {
+        width: 90%;
+        margin: 10px 0px 100px 0px;
+    }
+
+    .serviços {
+        font-size: 20px;
+    }
+
+    .container-servicos {
+        padding: 10px;
+    }
+
+    .profissionais {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+    
+    footer .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    footer ul {
+        margin-top: 20px;
+    }
+
+    footer ul li a {
+        font-size: 18px;
+    }
+
+    footer address {
+        margin-top: 20px;
+    }
+}
